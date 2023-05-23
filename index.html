@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Treinando minhas habilidades</h1>
+    <!--aqui eu aprendi alguns atributos do form
+        e como são ultilizados, no meu caso
+        foram form com os métodos Get e post
+        Get serve mais de maneira livre quando não são dados 
+        sensíveis, ja o post da uma encurtada na URL
+        mas fica de modo visível para web
+
+        o action que serve para enviar os dados
+        autocomplete sabendo que eu posso usar tanto na tag for 
+        como nos proprios campos de input
+
+        atributos da tag input 
+        como text password, name e id (ganhei uma dica para id´s use sempre o mesmo do name porém com um i
+        ou seja se o name="nome" o id vai ficar id="inome")
+     
+    -->
+    <h1>formulario teste</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="iusu">Usuario:</label>
+            <input type="text" name="usu" id="iusu" required minlength="3" maxlength="10" size="default"
+            placeholder="nome de usuario">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="5" maxlength="10">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
 </body>
 </html>
