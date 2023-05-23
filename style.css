@@ -1,4 +1,9 @@
-*{
-    font-family:arial, Arial, Helvetica, sans-serif;
-    
+* {
+    font-family: arial, Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    display: grid;
+    justify-content: center;
 }
