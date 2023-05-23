@@ -12,6 +12,9 @@ body {
 }
 
 .campo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     color: white;
     padding: 25px;
     background-color: black;

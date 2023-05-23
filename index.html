@@ -10,31 +10,66 @@
 </head>
 
 <body>
-    <h1>Formulario do Juneka</h1>
+    <header>
+        <h1>Cadastro de amigos</h1>
+    </header>
+    <main>
+        <form action="">
+            <div class="campo">
+                <fieldset>
+                    <legend>sexo</legend>
+                    <label for="isxmas">
+                        <input type="radio" name="sexo" id="isxmas">Masculino
+                        <br>
+                    </label>
 
-    <form class="form" action="junior.php" method="post">
-        <legend>contato</legend>
-        <div class="campo">
-            <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required placeholder="Digite seu nome">
-        </div>
-        <div class="campo">
-            <label for="itelefone">Telefone:</label>
-            <input type="text" name="telefone" id="itelefone" required placeholder="Digite seu telefone">
-        </div>
-        <div class="campo">
-            <label for="iemail">E-mail</label>
-            <input type="text" name="email" id="iemail" required placeholder="digite seu e-mail">
-        </div>
-        <div class="campo">
-            <label for="isenha">senha:</label>
-            <input type="password" name="senha" id="isenha" required placeholder="Digite sua senha">
-        </div>
-        <div>
+                    <label for="isxfem">
+                        <input type="radio" name="sexo" id="isxfem">Feminino
+                    </label>
+
+                </fieldset>
+            </div>
+            <div class="campo">
+                <fieldset>
+                    <legend>Esportes</legend>
+                    <label for="iEsFut">
+                        <input type="checkbox" name="fut" id="iEsFut">Futebol
+                    </label>
+
+                    <label for="iEsSka">
+                        <input type="checkbox" name="ska" id="iEsSka">Skate
+                    </label>
+                    <label for="iEsVol">
+                        <input type="checkbox" name="vol" id="iEsVol">Vôlei
+                    </label>
+                </fieldset>
+            </div>
+            <div class="campo">
+
+                <fieldset>
+                    <legend>Contato</legend>
+                    <label for="iNome">
+                        Nome:
+                        <input type="text" name="nome" id="iNome" placeholder="Digite seu nome" </label>
+                        <label for="iSobreNome">
+                            Sobrenome:
+                            <input type="text" name="sobrenome" id="iSobreNome" placeholder="Digite seu sobre nome">
+                            <br>
+                            <label for="iTelefone">
+                                Telefone:
+                                <input type="tel" name="telefone" id="iTelefone" placeholder="seu número de telefone">
+                            </label>
+                        </label>
+
+                </fieldset>
+            </div>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
-        </div>
-    </form>
+        </form>
+
+    </main>
+
+
 </body>
 
 </html>
