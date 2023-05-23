@@ -10,44 +10,28 @@
 </head>
 
 <body>
-    <!--aqui eu aprendi alguns atributos do form
-        e como são ultilizados, no meu caso
-        foram form com os métodos Get e post
-        Get serve mais de maneira livre quando não são dados 
-        sensíveis, ja o post da uma encurtada na URL
-        mas fica de modo visível para web
+    <h1>Formulario do Juneka</h1>
 
-        o action que serve para enviar os dados
-        autocomplete sabendo que eu posso usar tanto na tag for 
-        como nos proprios campos de input
+    <form class="form" action="" method="get">
+        <legend>contato</legend>
+        <div class="campo">
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome">
+        </div>
+        <div class="campo">
+            <label for="itelefone">Telefone:</label>
+            <input type="text" name="telefone" id="itelefone">
+        </div>
+        <div class="campo">
+            <label for="iemail">E-mail</label>
+            <input type="text" name="email" id="iemail">
+        </div>
+        <div class="campo">
+            <label for="isenha">senha:</label>
+            <input type="password" name="senha" id="isenha">
+        </div>
 
-        atributos da tag input 
-        como text password, name e id (ganhei uma dica para id´s use sempre o mesmo do name porém com um i
-        ou seja se o name="nome" o id vai ficar id="inome");
-
-        aprendi a validar o formulario usando request
-        e os botoes de reset and submit
-
-        placeholder
-     
-    -->
-    <h1>formulario teste</h1>
-    <form action="cadastro.php" method="post" autocomplete="off">
-        <p>
-            <label for="iusu">Usuario:</label>
-            <input type="text" name="usu" id="iusu" required minlength="3" maxlength="10" size="default"
-                placeholder="nome de usuario">
-        </p>
-        <p>
-            <label for="isen">Senha:</label>
-            <input type="password" name="sen" id="isen" required minlength="5" maxlength="10">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
     </form>
-
 </body>
 
 </html>

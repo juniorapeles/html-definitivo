@@ -1,9 +1,31 @@
 * {
     font-family: arial, Arial, Helvetica, sans-serif;
 
+
 }
 
 body {
+
     display: grid;
     justify-content: center;
+    background-color: oldlace;
+}
+
+.campo {
+    color: white;
+    padding: 25px;
+    background-color: black;
+    margin-top: 10px;
+    height: 10%vh;
+    width: 50%vh;
+    border-radius: 6px;
+}
+
+.form {
+    color: white;
+    font: arial;
+    font-size: 20px;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 7px;
 }
